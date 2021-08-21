@@ -59,21 +59,21 @@ padding: 0;
 
 
 }
-.isUrgent{
+ul .isUrgent{
     padding: 15px 20px;
     background-color: #FFEBCD;
     font-size: 12px;
 }
-.isNotUrgent{
+ul .isNotUrgent{
     padding: 15px 20px;
     font-size: 12px;
 }
-.time{
+ul .time{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.urgent{
+ul .urgent{
     border:2px solid orange;
     border-radius: 100px;
     color:orange;
