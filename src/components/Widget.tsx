@@ -97,7 +97,7 @@ export class Widget extends React.Component<MyProps, MyState> {
                       </div>
                     </div>
                   )}
-                  <div className={styles.body}>{this.state.data[post].body}</div>
+                  <div>{this.state.data[post].body}</div>
                 </li>
               );
             })}
