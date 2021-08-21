@@ -24,7 +24,7 @@ export class Widget extends React.Component<MyProps, MyState> {
           body: "Компания обеспечит бесплатными тестамина коронавирус всех приезжающих в Норильск поддержит стартапы Заполярья",
         },
         {
-          time: "20.08.2021",
+          time: "21.08.2021",
           body: "Компания обеспечит бесплатными тестамина коронавирус всех приезжающих в Норильск",
         },
       ],
@@ -97,7 +97,7 @@ export class Widget extends React.Component<MyProps, MyState> {
                       </div>
                     </div>
                   )}
-                  <div>{this.state.data[post].body}</div>
+                  <div className={styles.body}>{this.state.data[post].body}</div>
                 </li>
               );
             })}
