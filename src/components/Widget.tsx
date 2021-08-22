@@ -46,7 +46,7 @@ export class Widget extends React.Component<MyProps, MyState> {
       ],
     };
   }
-  
+
   render() {
     return (
       <div className={styles.container}>
@@ -87,7 +87,7 @@ export class Widget extends React.Component<MyProps, MyState> {
                           this.state.months[
                             Number.parseInt(
                               this.state.data[post].time.slice(3, 5)
-                            )-1
+                            ) - 1
                           ]
                         }{" "}
                         {this.state.data[post].time.slice(
@@ -97,7 +97,11 @@ export class Widget extends React.Component<MyProps, MyState> {
                       </div>
                     </div>
                   )}
-                  <div>{this.state.data[post].body}</div>
+                  {this.state.data[post].body.length < 90 ? (
+                    <div>{this.state.data[post].body}</div>
+                  ) : (
+                    <div>{this.state.data[post].body.slice(0, 90)}...</div>
+                  )}
                 </li>
               );
             })}
